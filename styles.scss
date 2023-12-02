@@ -1,0 +1,51 @@
+@for $i from 1 through 3 {
+    .text-#{$i}{
+        font-size: 25px * $i;
+    }
+}
+$col-1: #59a96a;
+$col-2: #636940;
+
+@for $i from 1 through 5 {
+    .box#{$i}{
+        @if $i%2 == 1{
+            background-color: #59a96a;
+        }@else {
+            background-color: #636940;
+            
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+    .box1{
+        border: 2px solid black;
+        width: 70px;
+        height: 200px;
+    }
+    .box2{
+        border: 2px solid black;
+        width: 70px;
+        height: 130px;
+    }
+    .box3{
+        border: 2px solid black;
+        width: 70px;
+        height: 160px;
+    }
+    .box4{
+        border: 2px solid black;
+        width: 70px;
+        height: 180px;
+    }
+    .box5{
+        border: 2px solid black;
+        width: 70px;
+        height: 110px;
+    }
+}
+
